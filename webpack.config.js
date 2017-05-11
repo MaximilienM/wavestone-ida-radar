@@ -8,7 +8,7 @@ const args = require('yargs').argv;
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 
-let isProd = args.prod;
+let isProd = args.proda
 let isDev = args.dev;
 
 let entry = ['./src/site.js'];
@@ -47,7 +47,8 @@ module.exports = {
 
     output: {
         path: buildPath,
-        publicPath: '/',
+        //publicPath: '/',
+        publicPath: '/dist/',
         filename: '[name].[hash].js'
     },
 
@@ -56,7 +57,7 @@ module.exports = {
             { test: /\.json$/, loader: 'json'},
             { test: /\.js$/, exclude: /node_modules/, loader: 'babel'},
             { test: /\.scss$/, exclude: /node_modules/, loader: ExtractTextPlugin.extract('style', 'css?sourceMap!sass') },
-            { test: /\.(png|jpg|ico)$/, exclude: /node_modules/, loader: 'file-loader?name=images/[name].[ext]&context=./src/images' }
+            { test: /\.(png|jpg|ico)$/, exclude: /node_modules/, loader: 'file-loader?name=/images/[name].[ext]&context=./src/images' }
         ]
     },
 

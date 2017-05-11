@@ -10,6 +10,7 @@ const Sheet = function (sheetReference) {
     })();
 
     self.exists = function (callback) {
+        console.log("entering Sheet.exists");
         var feedURL = "https://spreadsheets.google.com/feeds/worksheets/" + self.id + "/public/basic?alt=json";
 
         // TODO: Move this out (as HTTPClient)

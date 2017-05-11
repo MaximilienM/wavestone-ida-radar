@@ -34,7 +34,7 @@
     "node-sass": "^3.10.0",
     "sass-loader": "^4.0.2",
     "style-loader": "^0.13.1",
-    "webpack": "^1.13.2",
+    "webpack": "^1.13.3",
     "webpack-dev-server": "^1.16.1",
     "xmlhttprequest": "^1.8.0",
     "yargs": "^5.0.0"
@@ -43,7 +43,7 @@
     "chance": "^1.0.4",
     "d3": "^4.2.6",
     "d3-tip": "^0.7.1",
-    "lodash": "^4.16.2",
+    "lodash": "^4.17.2",
     "sanitize-html": "^1.13.0",
     "tabletop": "^1.4.3"
   }
