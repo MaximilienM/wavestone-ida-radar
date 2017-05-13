@@ -4,7 +4,7 @@
 
 const TrelloHelper = function () {
     var self = {};
-    var trello_board_url = '/boards/UfVop3Qa';
+    var trello_board_url = '/b/UfVop3Qa';
     
     var global_cards = [];
     var global_lists = [];
@@ -256,13 +256,14 @@ const TrelloHelper = function () {
         function trelloGO() { 
             console.log("entering TrelloGOOOO");
             Trello.authorize({
-            	  key: 'ce985aec974d13e13e32cee6d4ac531b',
+            	  key: 'c01c2c28431ed48b2a940ea87f2b6b5c',
             	  type: 'token',
-            	  name: 'MyApp',
+            	  type: 'f6fa5405d394e070e3a838ee7bd39b34d40f8b6e784660bcc0dfad95042a59c2',
+            	  name: 'Getting Started Radar',
             	  scope: {
             	    read: 'true',
             	    write: 'true' },
-            	  expiration: '1day',
+            	  expiration: 'never',
             	  success: authenticationSuccess,
             	  error: authenticationFailure,
             });

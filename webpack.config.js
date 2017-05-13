@@ -72,6 +72,12 @@ module.exports = {
         contentBase: buildPath,
         host: '0.0.0.0',
         port: 8080
-    }
+    },
+	
+	node: {
+	  console: 'empty',
+	  fs: 'empty',
+	  net: 'empty',
+	  tls: 'empty'
+	}
 };
-
