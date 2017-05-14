@@ -4,7 +4,7 @@
 
 const TrelloHelper = function () {
     var self = {};
-    var trello_board_url = '/b/UfVop3Qa';
+    var trello_board_url = '/boards/UfVop3Qa';
     
     var global_cards = [];
     var global_lists = [];
